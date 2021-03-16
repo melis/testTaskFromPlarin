@@ -1,0 +1,16 @@
+.App {
+  max-width: 1020px;
+  margin: auto;
+  min-width: 400px;
+  background-color: white;
+  min-height: 100vh;
+
+  .content {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: 400px) {
+      display: block;
+    }
+  }
+}

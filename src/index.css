@@ -1,0 +1,16 @@
+body {
+  background-color: #e5e5e5;
+}
+
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  background-color: #2196f3 !important;
+  color: white !important;
+}
+
+@media (max-width: 768px) {
+  .ant-radio-button-wrapper {
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+  }
+}
