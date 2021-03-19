@@ -2,14 +2,14 @@ import React from "react";
 import style from "./User.module.scss";
 
 const User = React.memo((props) => {
-  const { setUser, setModalShow, show, user } = props;
+  const { setUser, setModalShow, modalShow, user } = props;
 
   console.log(user.id);
   return (
     <div
       className={style.userBox}
       onClick={() => {
-        if (!show) {
+        if (!modalShow) {
           setUser(user);
           setModalShow(true);
         }

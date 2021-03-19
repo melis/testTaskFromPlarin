@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
-import api from '../../api/api';
-import style from './Modal.module.scss';
+import React, { useState } from "react";
+import api from "../../api/api";
+import style from "./Modal.module.scss";
 
 const Modal = (props) => {
   const { user, setModalShow } = props;
-  let fn = '';
-  let ln = '';
-  let em = '';
-  let av = '';
+  let fn = "";
+  let ln = "";
+  let em = "";
+  let av =
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/OOjs_UI_icon_userAvatar.svg/1024px-OOjs_UI_icon_userAvatar.svg.png";
+
   if (user) {
     fn = user.first_name;
     ln = user.last_name;
@@ -82,7 +84,12 @@ const Modal = (props) => {
             </div>
             <div
               onClick={() => {
-                updUser({ id: user.id, first_name: firstName, last_name: lastName, email });
+                updUser({
+                  id: user.id,
+                  first_name: firstName,
+                  last_name: lastName,
+                  email,
+                });
               }}
             >
               Сохранить
