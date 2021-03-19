@@ -1,7 +1,10 @@
-import React from 'react';
-import style from './User.module.scss';
+import React from "react";
+import style from "./User.module.scss";
 
-const User = ({ user, setUser, setModalShow, show }) => {
+const User = React.memo((props) => {
+  const { setUser, setModalShow, show, user } = props;
+
+  console.log(user.id);
   return (
     <div
       className={style.userBox}
@@ -20,6 +23,6 @@ const User = ({ user, setUser, setModalShow, show }) => {
       </div>
     </div>
   );
-};
+});
 
 export default User;
