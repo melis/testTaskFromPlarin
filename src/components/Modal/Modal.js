@@ -36,7 +36,7 @@ const Modal = (props) => {
   };
 
   return (
-    <div className={style.modal}>
+    <div className={style.modal} style={{ top: window.scrollY }}>
       <span
         className={style.close}
         onClick={() => {

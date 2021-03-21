@@ -4,7 +4,7 @@ import style from "./User.module.scss";
 const User = React.memo((props) => {
   const { setUser, setModalShow, modalShow, user } = props;
 
-  console.log(user.id);
+  console.log("Render user: ", user.first_name);
   return (
     <div
       className={style.userBox}

@@ -7,8 +7,7 @@ let initialState = {
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'SET_USERS':
-      // console.log(action);
+    case "SET_USERS":
       return { ...state, ...action.data };
 
     default:
@@ -17,11 +16,3 @@ const reducer = (state = initialState, action) => {
 };
 
 export default reducer;
-
-// {
-// "id": 1,
-// "email": "george.bluth@reqres.in",
-// "first_name": "George",
-// "last_name": "Bluth",
-// "avatar": "https://reqres.in/img/faces/1-image.jpg"
-// },
